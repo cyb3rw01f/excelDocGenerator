@@ -10,7 +10,7 @@ Script generates a Microsoft Excel document containing a maco. The macro vba cod
 
 .Notes
 ##############################################################
-Macro enabled Excel Document generater requirs Microsoft Excel
+Macro enabled Excel Document generater requiers Microsoft Excel
 ##############################################################
 I developed this script to assist testing security controls ability to detect/alert on Word documents containing macros. 
 
