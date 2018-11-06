@@ -6,7 +6,7 @@ Author of excelDocGenerator script @cyberw01f
 Last updated 6/24/2018
 
 .SYNOPSIS 
-This file is for testing purposes onlt. Malicious use of this script is prohibitted. 
+This file is for testing purposes only. Malicious use of this script is prohibitted. 
 
 .DESCRIPTION
 Script generates a Microsoft Excel document containing a maco. The macro vba code can be customzed. 
