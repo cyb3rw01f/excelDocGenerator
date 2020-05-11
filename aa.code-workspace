@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\python"
+		},
+		{
+			"name": "wordDocGenerator",
+			"path": "..\\wordDocGenerator"
+		},
+		{
+			"name": "excelDocGenerator",
+			"path": "."
+		},
+		{
+			"name": "FileCryptorator",
+			"path": "..\\FileCryptorator"
+		},
+		{
+			"name": "rels_url",
+			"path": "..\\rels_url"
+		}
+	],
+	"settings": {}
+}
