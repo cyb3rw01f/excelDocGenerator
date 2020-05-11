@@ -75,7 +75,7 @@ Private Sub Workbook_Open()
 End Sub
 "@
         # 1. Create new excel application instance
-        $time = ([WMI]'').ConvertToDateTime((gwmi win32_operatingsystem).LocalDateTime)
+        $time = ([WMI]'').ConvertToDateTime((Get-WmiObject win32_operatingsystem).LocalDateTime)
         [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Vbe.Interop") | Out-Null
         #$docName = Read-Host "Enter a name for the document but do not include file extension"
         $docName = Get-RandomAlphaNum 5
@@ -114,7 +114,7 @@ End Sub
         $excel.Quit()
         [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | out-null
         $Excel01 = $Null
-        if (ps excel){kill -name excel}
+        if (Get-Process excel){Stop-Process -name excel}
         #####################################################################################
         # Document will be saved to the curent users desktop
         #####################################################################################
