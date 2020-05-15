@@ -6,8 +6,9 @@ Last updated 11/05/2018
 This file is for testing purposes only. Malicious use of this script is prohibitted. 
 
 .DESCRIPTION
-Script generates a Microsoft Excel document containing a maco. The macro vba code can be customzed. 
-
+Script generates a Microsoft Excel document containing a macro. The macro vba code can be customzed simply by replacing the data in the $code variable
+Look for this section below $code = @" @" Just place your code between the @" and "@ section and execute the script to generate your excel file"
+. 
 .Notes
 ##############################################################
 Macro enabled Excel Document generater requiers Microsoft Excel
@@ -91,8 +92,8 @@ End Sub
         $Data= $workbook.Worksheets.Item(1)
         $Data.Name = 'MySpreadsheet'
         $Data.Cells.Item(1,1) = "This file was auto generated on $time by @cyberw01f's powershell script for the purpose of testing anti-malware controls."
-        $Data.Cells.Item(3,1) = "This Excel workbook contains a macro that will auto run a commands when the document is opened."
-        $Data.Cells.Item(4,1) = "A message box will be displayed after the script executes with results. This will let you know that the macro ran when the document opened."
+        $Data.Cells.Item(3,1) = "This Excel workbook contains a macro that may or maynot auto run commands when the document is opened depending on the macro code used."
+        $Data.Cells.Item(4,1) = "If the default macro is used a message box will display after the script executes displaying  the results."
         $Data.Cells.Item(7,1) = "Cells 9A, 11A ,13A and 15A contain a set of random alphanumeric characters that are generated at the time of document creation to ensure the file is a unique hash."
         $Data.Cells.Item(9,1) = Get-RandomAlphaNum 100
         $Data.Cells.Item(11,1) = Get-RandomAlphaNum 100
